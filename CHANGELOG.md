@@ -8,6 +8,41 @@ die Versionierung an [Semantic Versioning](https://semver.org/lang/de/).
 
 ---
 
+## [1.2] – 2026-11-02
+
+Komfortupdate: ein neues **EXTRAS**-Menü im START-Fenster. Die Übersetzung
+selbst ist unverändert gegenüber 1.1.
+
+### Hinzugefügt
+
+* **Fünfter START-Menüeintrag „EXTRAS“** mit vier Einstellungen:
+  * `EXP MESETA` 1X / 2X / 4X: EXP- und Meseta-Belohnung pro Gegner wird beim
+    Kampfende vor der Verteilung vervielfacht (Obergrenze 65.535 pro Gegner).
+  * `ZUFALLSKAMPF` AN / AUS: unterdrückt nur Zufallskämpfe, keine Story-Kämpfe.
+  * `KAMPF 2X` AUS / START / IMMER: Die Kampflogik läuft zweimal pro Bild
+    (nur wenn START gehalten wird bzw. immer). Grafikübertragung und
+    VBlank-Takt bleiben unverändert, Textausgabe und Musik werden nicht
+    schneller.
+  * `LAUFEN 2X` AUS / AN: nutzt die im Original vorhandene, aber ungenutzte
+    4-Pixel-Schrittstufe der Lauftabelle. In Events und bei Fahrzeugen inaktiv.
+* Neues Fenster 8 in der Fenstergruppe des System-Menüs (`Win_QOL`), Systemfenster
+  um zwei Zeilen höher.
+
+### Technisch
+
+* Einstellungen im bisher unbenutzten RAM `$FFFFEF50`–`$FFFFEF53`, alle
+  Startwerte 0 = Originalverhalten; sie werden nicht im Spielstand gespeichert.
+* ROM-Größe unverändert (3.145.728 Bytes), ROM-Ende `0x002FFFFF`, interne
+  Prüfsumme neu berechnet (`EE48`). SRAM-Konfiguration und Spielstände
+  unverändert und kompatibel.
+* Prüfsummen der gepatchten ROM: CRC32 `ECC48D6F`, MD5
+  `d534643c2f0302caf09da2defb5f6889`, SHA-1
+  `957c5e96acef8fd9589b1b57cdb5e4777722339d`.
+* Savestates älterer Versionen sind nicht mehr kompatibel, da sich der
+  Programmcode verschoben hat.
+
+---
+
 ## [1.1] – 2026-09-02
 
 Das große Umlaut-Update. Version 1.0 musste Umlaute noch als `ae`/`oe`/`ue`

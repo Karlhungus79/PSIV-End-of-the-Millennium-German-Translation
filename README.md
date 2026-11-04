@@ -2,7 +2,7 @@
 
 **Version 1.2** · Released 2026-11-02 · Author: **Karlhungus** · Platform: Sega Mega Drive / Genesis
 
-[![Latest release](https://img.shields.io/badge/release-v1.2-blue)](https://github.com/Karlhungus79/PSIV-End-of-the-Millennium-German-Translation/releases/latest)
+[![Latest release](https://img.shields.io/badge/release-v1.2-blue)](https://github.com/Karlhungus79/Phantasy-Star-4-German-Translation/releases/latest)
 
 > Diese Seite ist zweisprachig: Englisch zuerst, [deutsche Fassung weiter unten](#über-diesen-patch-deutsch).
 > This page is bilingual: English first, [German version further down](#about-this-patch-english).
